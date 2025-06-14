@@ -1,105 +1,116 @@
-<div class="header-content">
-    <div class="header-badge">AUN-QA 2566</div>
-    <h1>รายงานการประเมินตนเอง</h1>
-    <h2>หลักสูตรพยาบาลศาสตรบัณฑิต</h2>
-    <div class="header-meta">
-        <div class="meta-item">
-            <i class="fas fa-university"></i>
-            <span>วิทยาลัยพยาบาลบรมราชชนนี ชัยนาท</span>
-        </div>
-        <div class="meta-item">
-            <i class="fas fa-calendar-alt"></i>
-            <span>ปีการศึกษา 2566</span>
-        </div>
-    </div>
-    <div class="header-highlight">
-        <div class="highlight-content">
-            <i class="fas fa-award"></i>
-            <div>
-                <strong>มาตรฐาน AUN-QA</strong>
-                <span>การประเมินคุณภาพการศึกษาตามเกณฑ์สากล</span>
-            </div>
-        </div>
+    <style>
+
+       /* ใช้ score-ring-large สำหรับวงกลมที่ใหญ่ขึ้น */
+        .score-ring-large {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .score-ring-large svg {
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+        }
+
+        .score-bg-large {
+            fill: none;
+            stroke: var(--gray-200);
+            stroke-width: 12;
+        }
+
+        .score-progress-large {
+            fill: none;
+            stroke: url(#scoreGradient);
+            stroke-width: 12;
+            stroke-linecap: round;
+            transition: stroke-dasharray 2s ease-in-out;
+        }
+
+        .score-text-large {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .score-number-large {
+            display: block;
+            font-family: var(--font-primary);
+            font-size: var(--text-4xl);
+            font-weight: 800;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+        }
+
+        .score-label-large {
+            font-family: var(--font-primary);
+            color: var(--gray-600);
+            font-weight: 600;
+            font-size: var(--text-base);
+            margin-top: var(--spacing-sm);
+        }
+
+     
+    </style>
+
+    <div class="bg-elements" aria-hidden="true">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
     </div>
 
-    <section class="content-grid" id="summary" role="region" aria-label="สรุปผลการประเมิน"></section>
-    <section class="content-grid" id="intro" role="region" aria-label="ข้อมูลเบื้องต้น"></section>
-</div>
-<div class="header-visual">
-    <div class="score-display">
-        <div class="score-ring">
-            <svg>
-                <defs>
-                    <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style="stop-color: var(--primary-color);" />
-                        <stop offset="100%" style="stop-color: var(--secondary-color);" />
-                    </linearGradient>
-                </defs>
-                <circle class="score-bg" cx="100" cy="100" r="90"></circle>
-                <circle class="score-progress" cx="100" cy="100" r="90" stroke-dasharray="0 565.48"></circle>
-            </svg>
-            <div class="score-text">
-                <span class="score-number">3.5</span>
-                <span class="score-label">คะแนนรวม</span>
+        <div class="header-content">
+            <div class="header-badge">
+                <i class="fas fa-award"></i>
+                AUN-QA 2566
+            </div>
+            <h1>รายงานการประเมินตนเอง</h1>
+            <h2>หลักสูตรพยาบาลศาสตรบัณฑิต</h2>
+            
+            <div class="header-meta">
+                <div class="meta-item">
+                    <i class="fas fa-university"></i>
+                    <span>วิทยาลัยพยาบาลบรมราชชนนี ชัยนาท</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>ปีการศึกษา 2566</span>
+                </div>
+            </div>
+
+            <div class="header-highlight">
+                <div class="highlight-content">
+                    <i class="fas fa-award"></i>
+                    <div>
+                        <strong>มาตรฐาน AUN-QA</strong>
+                        <span>การประเมินคุณภาพการศึกษาตามเกณฑ์สากล</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="aun-gauges">
-        <div class="aun-gauge" data-score="4">
-            <svg>
-                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
-                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
-            </svg>
-            <span>เกณฑ์ 1: 4</span>
+
+        <div class="header-visual">
+            <div class="score-display">
+                <div class="score-ring-large">
+                    <svg>
+                        <defs>
+                            <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color: var(--primary-color);" />
+                                <stop offset="100%" style="stop-color: var(--secondary-color);" />
+                            </linearGradient>
+                        </defs>
+                        <circle class="score-bg-large" cx="100" cy="100" r="88"></circle>
+                        <circle class="score-progress-large" cx="100" cy="100" r="88" stroke-dasharray="387 553"></circle>
+                    </svg>
+                    <div class="score-text-large">
+                        <span class="score-number-large">3.5</span>
+                        <span class="score-label-large">คะแนนรวม</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="aun-gauge" data-score="4">
-            <svg>
-                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
-                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
-            </svg>
-            <span>เกณฑ์ 2: 4</span>
-        </div>
-        <div class="aun-gauge" data-score="4">
-            <svg>
-                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
-                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
-            </svg>
-            <span>เกณฑ์ 3: 4</span>
-        </div>
-        <div class="aun-gauge" data-score="3">
-            <svg>
-                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
-                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
-            </svg>
-            <span>เกณฑ์ 4: 3</span>
-        </div>
-        <div class="aun-gauge" data-score="3">
-            <svg>
-                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
-                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
-            </svg>
-            <span>เกณฑ์ 5: 3</span>
-        </div>
-        <div class="aun-gauge" data-score="3">
-            <svg>
-                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
-                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
-            </svg>
-            <span>เกณฑ์ 6: 3</span>
-        </div>
-        <div class="aun-gauge" data-score="4">
-            <svg>
-                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
-                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
-            </svg>
-            <span>เกณฑ์ 7: 4</span>
-        </div>
-        <div class="aun-gauge" data-score="3">
-            <svg>
-                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
-                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
-            </svg>
-            <span>เกณฑ์ 8: 3</span>
-        </div>
-    </div>
-</div>
