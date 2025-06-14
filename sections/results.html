@@ -1,173 +1,60 @@
-<!-- Results Section -->
-<section id="results-content" class="content-section" style="display: none;">
-    <div class="section-header">
-        <button class="back-btn" onclick="showNavigation()">
-            <i class="fas fa-arrow-left"></i> กลับ
-        </button>
-        <h2 class="section-title">ผลลัพธ์</h2>
-        <p class="section-subtitle">ผลการศึกษาและความพึงพอใจ</p>
-    </div>
-
-    <!-- Results Hero -->
-    <article class="card glass-card full-width">
+<div class="content-grid">
+    <div class="card full-width glass-card">
         <div class="card-header">
-            <h3><i class="fas fa-chart-line"></i> ภาพรวมผลลัพธ์</h3>
-            <div class="results-badge">
-                <span>ประเมินปี 2566</span>
+            <h3><i class="fas fa-building"></i> สิ่งอำนวยความสะดวก</h3>
+        </div>
+        <div class="facilities-grid">
+            <div class="facility-item">
+                <i class="fas fa-building"></i>
+                <div>
+                    <strong>อาคารเรียน</strong>
+                    <span>3 หลัง</span>
+                </div>
+            </div>
+            <div class="facility-item">
+                <i class="fas fa-flask"></i>
+                <div>
+                    <strong>ห้องปฏิบัติการ</strong>
+                    <span>5 สาขา</span>
+                </div>
+            </div>
+            <div class="facility-item">
+                <i class="fas fa-book"></i>
+                <div>
+                    <strong>ห้องสมุดดิจิทัล</strong>
+                    <span>ULibM, CU-elibrary, CINAHL</span>
+                </div>
+            </div>
+            <div class="facility-item">
+                <i class="fas fa-wifi"></i>
+                <div>
+                    <strong>Wi-Fi</strong>
+                    <span>ความเร็วสูง</span>
+                </div>
             </div>
         </div>
-        <div class="results-hero">
-            <div class="hero-stat">
-                <div class="hero-number">100<span>%</span></div>
-                <div class="hero-label">อัตราการสำเร็จการศึกษา</div>
-                <div class="hero-trend up">
-                    <i class="fas fa-arrow-up"></i> +1% จากปีก่อน
-                </div>
-            </div>
-            <div class="hero-stat">
-                <div class="hero-number">100<span>%</span></div>
-                <div class="hero-label">อัตราการจ้างงาน</div>
-                <div class="hero-trend neutral">
-                    <i class="fas fa-minus"></i> คงที่
-                </div>
-            </div>
-            <div class="hero-stat">
-                <div class="hero-number">4.46</div>
-                <div class="hero-label">คะแนนความพึงพอใจ</div>
-                <div class="hero-trend up">
-                    <i class="fas fa-arrow-up"></i> +0.03 จากปีก่อน
-                </div>
-            </div>
-        </div>
-    </article>
-
-    <!-- Graduation and Employment -->
-    <div class="results-grid">
-        <article class="card glass-card">
-            <div class="card-header">
-                <h3><i class="fas fa-graduation-cap"></i> อัตราการสำเร็จและจ้างงาน</h3>
-            </div>
-            <div class="graduation-stats">
-                <div class="grad-item">
-                    <div class="grad-visual">
-                        <div class="grad-circle">100%</div>
-                    </div>
-                    <div class="grad-info">
-                        <strong>อัตราการสำเร็จการศึกษา</strong>
-                        <span>เพิ่มขึ้น 1% จากปีก่อน</span>
-                        <div class="grad-metric">นักศึกษาทั้งหมด 452 คน</div>
-                    </div>
-                </div>
-                <div class="grad-item">
-                    <div class="grad-visual">
-                        <div class="grad-circle">100%</div>
-                    </div>
-                    <div class="grad-info">
-                        <strong>อัตราการจ้างงาน</strong>
-                        <span>ภายใน 1 ปีหลังจบการศึกษา</span>
-                        <div class="grad-metric">เงินเดือนเฉลี่ย 15,497 บาท</div>
-                    </div>
-                </div>
-                <div class="grad-item">
-                    <div class="grad-visual">
-                        <div class="grad-circle">67.24%</div>
-                    </div>
-                    <div class="grad-info">
-                        <strong>สอบใบประกอบวิชาชีพ</strong>
-                        <span>เพิ่มขึ้น 7.59% จากปีก่อน</span>
-                        <div class="grad-metric">เป้าหมาย 75% ในปี 2567</div>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="card glass-card satisfaction-card">
-            <div class="card-header">
-                <h3><i class="fas fa-smile"></i> ความพึงพอใจ</h3>
-            </div>
-            <div class="satisfaction-grid">
-                <div class="satisfaction-item highlight">
-                    <div class="satisfaction-score">4.46</div>
-                    <div class="satisfaction-label">ผู้ใช้บัณฑิต</div>
-                    <div class="satisfaction-bar">
-                        <div class="bar-fill" style="width: 89.2%" data-percentage="89.2"></div>
-                    </div>
-                    <div class="satisfaction-trend up">+0.03 จากปีก่อน</div>
-                </div>
-                <div class="satisfaction-item">
-                    <div class="satisfaction-score">4.20</div>
-                    <div class="satisfaction-label">นักศึกษา</div>
-                    <div class="satisfaction-bar">
-                        <div class="bar-fill" style="width: 84%" data-percentage="84"></div>
-                    </div>
-                    <div class="satisfaction-trend neutral">คงที่</div>
-                </div>
-                <div class="satisfaction-item">
-                    <div class="satisfaction-score">4.15</div>
-                    <div class="satisfaction-label">อาจารย์</div>
-                    <div class="satisfaction-bar">
-                        <div class="bar-fill" style="width: 83%" data-percentage="83"></div>
-                    </div>
-                    <div class="satisfaction-trend up">+0.05 จากปีก่อน</div>
-                </div>
-            </div>
-        </article>
     </div>
-
-    <!-- Performance Trends -->
-    <article class="card glass-card full-width">
+    <div class="card full-width">
         <div class="card-header">
-            <h3><i class="fas fa-chart-area"></i> แนวโน้มผลการดำเนินงาน</h3>
+            <h3><i class="fas fa-chart-line"></i> แนวโน้ม 3 ปี</h3>
         </div>
-        <div class="trends-grid">
-            <div class="trend-item">
-                <div class="trend-icon">
-                    <i class="fas fa-user-graduate"></i>
-                </div>
-                <div class="trend-content">
-                    <h4>จำนวนนักศึกษา</h4>
-                    <div class="trend-value">452 คน</div>
-                    <div class="trend-change down">
-                        <i class="fas fa-arrow-down"></i> -1.7% จากปีก่อน
-                    </div>
-                </div>
+        <div class="trend-charts">
+            <div class="chart-item">
+                <h4>จำนวนนักศึกษา</h4>
+                <canvas id="studentCountChart"></canvas>
             </div>
-            <div class="trend-item">
-                <div class="trend-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <div class="trend-content">
-                    <h4>เงินเดือนเฉลี่ย</h4>
-                    <div class="trend-value">15,497 บาท</div>
-                    <div class="trend-change up">
-                        <i class="fas fa-arrow-up"></i> +847 บาท จากปีก่อน
-                    </div>
-                </div>
+            <div class="chart-item">
+                <h4>อัตราการคงอยู่</h4>
+                <canvas id="retentionRateChart"></canvas>
             </div>
-            <div class="trend-item">
-                <div class="trend-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="trend-content">
-                    <h4>ใบประกอบวิชาชีพ</h4>
-                    <div class="trend-value">67.24%</div>
-                    <div class="trend-change up">
-                        <i class="fas fa-arrow-up"></i> +7.59% จากปีก่อน
-                    </div>
-                </div>
+            <div class="chart-item">
+                <h4>สอบใบประกอบวิชาชีพ</h4>
+                <canvas id="licensePassRateChart"></canvas>
             </div>
-            <div class="trend-item">
-                <div class="trend-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="trend-content">
-                    <h4>ความพึงพอใจรวม</h4>
-                    <div class="trend-value">4.46/5.0</div>
-                    <div class="trend-change up">
-                        <i class="fas fa-arrow-up"></i> +0.03 จากปีก่อน
-                    </div>
-                </div>
+            <div class="chart-item">
+                <h4>ความพึงพอใจ</h4>
+                <canvas id="satisfactionChart"></canvas>
             </div>
         </div>
-    </article>
-</section>
+    </div>
+</div>

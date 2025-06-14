@@ -1,65 +1,105 @@
-<!-- Hero Section -->
-<section class="hero-section" role="banner" id="hero">
-    <div class="hero-content">
-        <div class="hero-badge animate-fade-in">
-            <i class="fas fa-award" aria-hidden="true"></i>
-            <span>มาตรฐาน AUN-QA</span>
+<div class="header-content">
+    <div class="header-badge">AUN-QA 2566</div>
+    <h1>รายงานการประเมินตนเอง</h1>
+    <h2>หลักสูตรพยาบาลศาสตรบัณฑิต</h2>
+    <div class="header-meta">
+        <div class="meta-item">
+            <i class="fas fa-university"></i>
+            <span>วิทยาลัยพยาบาลบรมราชชนนี ชัยนาท</span>
         </div>
-        <h1 class="hero-title animate-slide-up">รายงานการประเมินตนเอง</h1>
-        <h2 class="hero-subtitle animate-slide-up delay-1">หลักสูตรพยาบาลศาสตรบัณฑิต</h2>
-        <div class="hero-meta animate-slide-up delay-2">
-            <div class="meta-item">
-                <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-                <span>ปีการศึกษา 2566</span>
-            </div>
-            <div class="meta-item">
-                <i class="fas fa-clock" aria-hidden="true"></i>
-                <span>1 มิถุนายน 2566 - 31 พฤษภาคม 2567</span>
-            </div>
-            <div class="meta-item">
-                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                <span>จังหวัดชัยนาท</span>
-            </div>
-        </div>
-        <div class="hero-highlight animate-slide-up delay-3">
-            <div class="highlight-content">
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <div>
-                    <strong>คะแนนรวม AUN-QA: 3.0</strong>
-                    <span>ผ่านเกณฑ์มาตรฐานสากล</span>
-                </div>
-            </div>
-        </div>
-        <div class="hero-actions animate-slide-up delay-4">
-            <button class="btn-primary hero-btn" onclick="scrollToSection('intro')">
-                <i class="fas fa-play" aria-hidden="true"></i>
-                เริ่มอ่านรายงาน
-            </button>
-            <button class="btn-outline hero-btn" onclick="scrollToSection('summary')">
-                <i class="fas fa-chart-pie" aria-hidden="true"></i>
-                ดูสรุปผล
-            </button>
+        <div class="meta-item">
+            <i class="fas fa-calendar-alt"></i>
+            <span>ปีการศึกษา 2566</span>
         </div>
     </div>
-    <div class="hero-visual animate-scale-in delay-5">
-        <div class="score-display">
-            <div class="score-ring">
-                <svg viewBox="0 0 100 100" aria-labelledby="score-title">
-                    <title id="score-title">คะแนนประเมิน AUN-QA: 3.0 จาก 5.0</title>
-                    <defs>
-                        <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <circle cx="50" cy="50" r="45" class="score-bg" fill="none"></circle>
-                    <circle cx="50" cy="50" r="45" class="score-progress" fill="none" stroke="url(#scoreGradient)" stroke-dasharray="0 283"></circle>
-                </svg>
-                <div class="score-text">
-                    <span class="score-number">3.0</span>
-                    <span class="score-label">คะแนน</span>
-                </div>
+    <div class="header-highlight">
+        <div class="highlight-content">
+            <i class="fas fa-award"></i>
+            <div>
+                <strong>มาตรฐาน AUN-QA</strong>
+                <span>การประเมินคุณภาพการศึกษาตามเกณฑ์สากล</span>
             </div>
         </div>
     </div>
-</section>
+
+    <section class="content-grid" id="summary" role="region" aria-label="สรุปผลการประเมิน"></section>
+    <section class="content-grid" id="intro" role="region" aria-label="ข้อมูลเบื้องต้น"></section>
+</div>
+<div class="header-visual">
+    <div class="score-display">
+        <div class="score-ring">
+            <svg>
+                <defs>
+                    <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color: var(--primary-color);" />
+                        <stop offset="100%" style="stop-color: var(--secondary-color);" />
+                    </linearGradient>
+                </defs>
+                <circle class="score-bg" cx="100" cy="100" r="90"></circle>
+                <circle class="score-progress" cx="100" cy="100" r="90" stroke-dasharray="0 565.48"></circle>
+            </svg>
+            <div class="score-text">
+                <span class="score-number">3.5</span>
+                <span class="score-label">คะแนนรวม</span>
+            </div>
+        </div>
+    </div>
+    <div class="aun-gauges">
+        <div class="aun-gauge" data-score="4">
+            <svg>
+                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <span>เกณฑ์ 1: 4</span>
+        </div>
+        <div class="aun-gauge" data-score="4">
+            <svg>
+                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <span>เกณฑ์ 2: 4</span>
+        </div>
+        <div class="aun-gauge" data-score="4">
+            <svg>
+                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <span>เกณฑ์ 3: 4</span>
+        </div>
+        <div class="aun-gauge" data-score="3">
+            <svg>
+                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <span>เกณฑ์ 4: 3</span>
+        </div>
+        <div class="aun-gauge" data-score="3">
+            <svg>
+                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <span>เกณฑ์ 5: 3</span>
+        </div>
+        <div class="aun-gauge" data-score="3">
+            <svg>
+                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <span>เกณฑ์ 6: 3</span>
+        </div>
+        <div class="aun-gauge" data-score="4">
+            <svg>
+                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <span>เกณฑ์ 7: 4</span>
+        </div>
+        <div class="aun-gauge" data-score="3">
+            <svg>
+                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="gauge-progress" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <span>เกณฑ์ 8: 3</span>
+        </div>
+    </div>
+</div>

@@ -1,219 +1,28 @@
-<!-- Quality Section -->
-<section id="quality-content" class="content-section" style="display: none;">
-    <div class="section-header">
-        <button class="back-btn" onclick="showNavigation()">
-            <i class="fas fa-arrow-left"></i> กลับ
-        </button>
-        <h2 class="section-title">คุณภาพ</h2>
-        <p class="section-subtitle">คุณภาพอาจารย์และสิ่งอำนวยความสะดวก</p>
-    </div>
-    
-    <!-- Quality Dashboard -->
-    <div class="quality-dashboard">
-        <article class="quality-card faculty">
-            <div class="quality-header">
-                <i class="fas fa-users-cog"></i>
-                <div>
-                    <h3>คุณภาพอาจารย์</h3>
-                    <p>บุคลากรที่มีคุณภาพและประสบการณ์</p>
-                </div>
-            </div>
-            <div class="faculty-visual">
-                <div class="faculty-chart">
-                    <div class="chart-segment phd" style="--percentage: 21.63"></div>
-                    <div class="chart-segment masters" style="--percentage: 78.37"></div>
-                    <div class="chart-center">
-                        <span class="total-faculty">37</span>
-                        <span class="faculty-label">คน</span>
-                    </div>
-                </div>
-                <div class="chart-legend">
-                    <div class="legend-item">
-                        <div class="legend-color phd"></div>
-                        <span>ปริญญาเอก (8 คน)</span>
-                        <div class="percentage">21.63%</div>
-                    </div>
-                    <div class="legend-item">
-                        <div class="legend-color masters"></div>
-                        <span>ปริญญาโท (29 คน)</span>
-                        <div class="percentage">78.37%</div>
-                    </div>
-                </div>
-            </div>
-            <div class="faculty-metrics">
-                <div class="quality-metric">
-                    <div class="metric-header">
-                        <span>ภาระงานตามเกณฑ์</span>
-                        <span class="metric-value">91.89%</span>
-                    </div>
-                    <div class="metric-bar">
-                        <div class="bar-fill" style="width: 91.89%" data-percentage="91.89">91.89%</div>
-                    </div>
-                </div>
-                <div class="quality-metric">
-                    <div class="metric-header">
-                        <span>ตำแหน่งทางวิชาการ</span>
-                        <span class="metric-value">4 คน</span>
-                    </div>
-                    <div class="metric-bar">
-                        <div class="bar-fill success" style="width: 10.8%" data-percentage="10.8">ผู้ช่วยศาสตราจารย์</div>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="quality-card facilities">
-            <div class="quality-header">
-                <i class="fas fa-building"></i>
-                <div>
-                    <h3>สิ่งอำนวยความสะดวก</h3>
-                    <p>สภาพแวดล้อมการเรียนรู้ที่ทันสมัย</p>
-                </div>
-            </div>
-            <div class="facilities-grid">
-                <div class="facility-item">
-                    <div class="facility-icon classroom">
-                        <i class="fas fa-chalkboard"></i>
-                    </div>
-                    <div class="facility-info">
-                        <strong>ห้องเรียน</strong>
-                        <span>3 อาคารเรียน</span>
-                        <div class="facility-status available">พร้อมใช้งาน</div>
-                    </div>
-                </div>
-                <div class="facility-item">
-                    <div class="facility-icon lab">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <div class="facility-info">
-                        <strong>ห้องปฏิบัติการ</strong>
-                        <span>ครบ 5 สาขา</span>
-                        <div class="facility-status available">15 ห้อง</div>
-                    </div>
-                </div>
-                <div class="facility-item">
-                    <div class="facility-icon tech">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <div class="facility-info">
-                        <strong>ระบบ IT</strong>
-                        <span>Cloud University</span>
-                        <div class="facility-status available">อัปเดต 2566</div>
-                    </div>
-                </div>
-                <div class="facility-item">
-                    <div class="facility-icon library">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <div class="facility-info">
-                        <strong>ฐานข้อมูล</strong>
-                        <span>CINAHL, EBSCO</span>
-                        <div class="facility-status available">24/7 Access</div>
-                    </div>
-                </div>
-            </div>
-            <div class="facility-summary">
-                <div class="summary-item">
-                    <i class="fas fa-check-circle"></i>
-                    <span>พื้นที่รวม 12,500 ตร.ม.</span>
-                </div>
-                <div class="summary-item">
-                    <i class="fas fa-check-circle"></i>
-                    <span>อุปกรณ์ทันสมัย 95%</span>
-                </div>
-            </div>
-        </article>
-    </div>
-
-    <!-- Environment Section -->
-    <article class="card glass-card environment-card">
+<div class="content-grid">
+    <div class="card full-width glass-card">
         <div class="card-header">
-            <h3><i class="fas fa-leaf"></i> สิ่งแวดล้อมและความปลอดภัย</h3>
-            <div class="green-badge">
-                <i class="fas fa-award"></i>
-                สำนักงานสีเขียวระดับดีเยี่ยม
-            </div>
+            <h3><i class="fas fa-users"></i> คุณสมบัติอาจารย์</h3>
         </div>
-        <div class="environment-features">
-            <div class="feature-item">
-                <div class="feature-icon waste">
-                    <i class="fas fa-recycle"></i>
-                </div>
-                <div class="feature-content">
-                    <h4>จัดการขยะอย่างเป็นระบบ</h4>
-                    <p>แยกขยะ 5 ประเภท และรีไซเคิล 80%</p>
-                    <div class="feature-metric">ลดขยะ 30%/ปี</div>
-                </div>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon water">
-                    <i class="fas fa-water"></i>
-                </div>
-                <div class="feature-content">
-                    <h4>บำบัดน้ำเสียมาตรฐาน</h4>
-                    <p>ระบบบำบัดน้ำเสียชีวภาพครบวงจร</p>
-                    <div class="feature-metric">คุณภาพ 95%</div>
-                </div>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon safety">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <div class="feature-content">
-                    <h4>ป้องกันอัคคีภัยครบถ้วน</h4>
-                    <p>ระบบเตือนภัยและดับเพลิงอัตโนมัติ</p>
-                    <div class="feature-metric">ตรวจสอบ 4 ครั้ง/ปี</div>
-                </div>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon accessibility">
-                    <i class="fas fa-wheelchair"></i>
-                </div>
-                <div class="feature-content">
-                    <h4>สิ่งอำนวยความสะดวกผู้พิการ</h4>
-                    <p>ทางลาด ลิฟต์ และห้องน้ำพิเศษ</p>
-                    <div class="feature-metric">100% ครอบคลุม</div>
-                </div>
-            </div>
-        </div>
-    </article>
-
-    <!-- Accreditation Section -->
-    <article class="card glass-card full-width">
+        <p>อาจารย์รับผิดชอบหลักสูตร 5 คน: ปริญญาเอก 40%, ปริญญาโท 60%. อาจารย์ประจำทั้งหมด 37 คน (2566)</p>
+    </div>
+    <div class="card full-width">
         <div class="card-header">
-            <h3><i class="fas fa-certificate"></i> การรับรองมาตรฐาน</h3>
+            <h3><i class="fas fa-tasks"></i> ภาระงานและการพัฒนา</h3>
         </div>
-        <div class="accreditation-grid">
-            <div class="accreditation-item">
-                <div class="accreditation-logo">
-                    <i class="fas fa-medal"></i>
-                </div>
-                <div class="accreditation-info">
-                    <h4>AUN-QA</h4>
-                    <p>มาตรฐานประกันคุณภาพระดับอาเซียน</p>
-                    <div class="accreditation-score">3.5/5.0</div>
-                </div>
-            </div>
-            <div class="accreditation-item">
-                <div class="accreditation-logo">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <div class="accreditation-info">
-                    <h4>Green Office</h4>
-                    <p>สำนักงานสีเขียว กรมส่งเสริมคุณภาพสิ่งแวดล้อม</p>
-                    <div class="accreditation-score">ดีเยี่ยม</div>
-                </div>
-            </div>
-            <div class="accreditation-item">
-                <div class="accreditation-logo">
-                    <i class="fas fa-user-md"></i>
-                </div>
-                <div class="accreditation-info">
-                    <h4>สภาการพยาบาล</h4>
-                    <p>การรับรองมาตรฐานวิชาชีพพยาบาล</p>
-                    <div class="accreditation-score">ผ่าน</div>
-                </div>
-            </div>
+        <p>91.89% ของอาจารย์มีภาระงานตามเกณฑ์. มี IDP และสนับสนุนตำแหน่งวิชาการตาม ก.พ. และ Thailand PSF</p>
+    </div>
+    <div class="card full-width environment-card">
+        <div class="card-header">
+            <h3><i class="fas fa-leaf"></i> สภาพแวดล้อมการเรียนรู้</h3>
         </div>
-    </article>
-</section>
+        <div class="environment-content">
+            <h4>กายภาพ</h4>
+            <p>อาคารเรียน 3 หลัง, ห้องปฏิบัติการ 5 สาขา, ห้องสมุดดิจิทัล (CINAHL, EBSCO), Wi-Fi ครอบคลุม. ได้รับ Green Office ดีเยี่ยม</p>
+            <h4>สังคม</h4>
+            <p>กิจกรรมเสริมหลักสูตร, ระบบสายรหัส, อาจารย์ที่ปรึกษา</p>
+            <h4>จิตใจ</h4>
+            <p>ระบบให้คำปรึกษา, คัดกรองภาวะซึมเศร้า, หอพักและสิ่งอำนวยความสะดวก</p>
+        </div>
+        <div class="green-badge">Green Office ดีเยี่ยม</div>
+    </div>
+</div>

@@ -1,187 +1,51 @@
-<!-- Overview Section -->
-<section id="overview-content" class="content-section" style="display: none;">
-    <div class="section-header">
-        <button class="back-btn" onclick="showNavigation()">
-            <i class="fas fa-arrow-left"></i> กลับ
-        </button>
-        <h2 class="section-title">ภาพรวม</h2>
-        <p class="section-subtitle">ประวัติ พัฒนาการ และจุดเด่นของสถาบัน</p>
-    </div>
-    <div class="content-grid">
-        <article class="card glass-card">
-            <div class="card-header">
-                <h3><i class="fas fa-history"></i> ประวัติและพัฒนาการ</h3>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-year">2520</div>
-                        <div class="timeline-title">เริ่มก่อตั้งโรงเรียนพยาบาล</div>
-                        <div class="timeline-desc">เริ่มต้นการศึกษาพยาบาลในจังหวัดชัยนาท เพื่อผลิตบุคลากรทางการแพทย์ให้กับท้องถิ่น</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-year">2523</div>
-                        <div class="timeline-title">ยกระดับเป็นวิทยาลัยพยาบาล</div>
-                        <div class="timeline-desc">พัฒนามาตรฐานการศึกษาสู่ระดับอุดมศึกษา รับนักศึกษาระดับปริญญาตรี</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-year">2537</div>
-                        <div class="timeline-title">พระราชทานนาม "บรมราชชนนี"</div>
-                        <div class="timeline-desc">ได้รับเกียรติจากสมเด็จพระบรมราชชนนีพันปีหลวง เป็นเกียรติสูงสุดของสถาบัน</div>
-                    </div>
-                </div>
-                <div class="timeline-item active">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-year">2562</div>
-                        <div class="timeline-title">เข้าสังกัด สถาบันพระบรมราชชนก</div>
-                        <div class="timeline-desc">พัฒนาสู่มาตรฐานการศึกษาระดับสากล ภายใต้การกำกับของกระทรวงสาธารณสุข</div>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="card glass-card">
-            <div class="card-header">
-                <h3><i class="fas fa-chart-bar"></i> คะแนนประเมิน AUN-QA</h3>
-                <div class="score-badge">
-                    <span>เกณฑ์ผ่าน: 2.0</span>
-                </div>
-            </div>
-            <div class="assessment-grid">
-                <div class="assessment-item">
-                    <div class="assessment-score excellent">4</div>
-                    <div class="assessment-info">
-                        <div class="assessment-label">เกณฑ์ที่ 1-3, 7</div>
-                        <div class="assessment-desc">ผลลัพธ์การเรียนรู้, หลักสูตร, การสอน, สนับสนุนนักศึกษา</div>
-                    </div>
-                    <div class="assessment-bar">
-                        <div class="bar-fill" style="width: 80%" data-percentage="80"></div>
-                    </div>
-                </div>
-                <div class="assessment-item">
-                    <div class="assessment-score good">3</div>
-                    <div class="assessment-info">
-                        <div class="assessment-label">เกณฑ์ที่ 4-6, 8</div>
-                        <div class="assessment-desc">การประเมิน, อาจารย์, สิ่งอำนวยความสะดวก, ผลลัพธ์</div>
-                    </div>
-                    <div class="assessment-bar">
-                        <div class="bar-fill" style="width: 60%" data-percentage="60"></div>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </div>
-
-    <article class="card glass-card full-width">
+<div class="content-grid">
+    <div class="card full-width glass-card">
         <div class="card-header">
-            <h3><i class="fas fa-trophy"></i> จุดเด่นและความสำเร็จ</h3>
-            <div class="achievement-count">
-                <span>5 ความสำเร็จหลัก</span>
-            </div>
+            <h3><i class="fas fa-university"></i> ปรัชญาและวิสัยทัศน์</h3>
         </div>
-        <div class="achievements-grid">
-            <div class="achievement-item">
-                <div class="achievement-icon">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-                <div class="achievement-content">
-                    <h4>หลักสูตรมาตรฐาน OBE</h4>
-                    <span>หลักสูตรพัฒนาตามมาตรฐาน OBE และ Learning Taxonomy</span>
-                </div>
-            </div>
-            <div class="achievement-item">
-                <div class="achievement-icon">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-                <div class="achievement-content">
-                    <h4>อัตราสำเร็จ 100%</h4>
-                    <span>นักศึกษาสำเร็จการศึกษาร้อยละ 100</span>
-                </div>
-            </div>
-            <div class="achievement-item">
-                <div class="achievement-icon">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-                <div class="achievement-content">
-                    <h4>การได้งาน 100%</h4>
-                    <span>นักศึกษาได้งานทำทันทีร้อยละ 100</span>
-                </div>
-            </div>
-            <div class="achievement-item">
-                <div class="achievement-icon">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-                <div class="achievement-content">
-                    <h4>สำนักงานสีเขียว</h4>
-                    <span>ได้รับรองเป็นสำนักงานสีเขียวระดับดีเยี่ยม</span>
-                </div>
-            </div>
-            <div class="achievement-item">
-                <div class="achievement-icon">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-                <div class="achievement-content">
-                    <h4>อาจารย์ผู้เชี่ยวชาญ</h4>
-                    <span>อาจารย์ได้รับตำแหน่งผู้ช่วยศาสตราจารย์ 4 คน</span>
-                </div>
-            </div>
+        <div class="vision-content">
+            <h4>สถาบันพระบรมราชชนก</h4>
+            <p><strong>ปรัชญา:</strong> การผลิตบัณฑิตและพัฒนาบุคลากรเพื่อประโยชน์ของประชาชน โดยยึดพระราชปณิธาน "ความสำเร็จที่แท้จริงอยู่ที่การนำความรู้ไปประยุกต์ใช้เพื่อประโยชน์สุขแก่มวลมนุษยชาติ"</p>
+            <p><strong>วิสัยทัศน์:</strong> มุ่งสร้างผู้นำและนวัตกรรมสุขภาพสู่ชุมชน เพื่อคุณภาพชีวิตที่ยั่งยืน</p>
+            <h4>คณะพยาบาลศาสตร์</h4>
+            <p><strong>ปรัชญา:</strong> พยาบาลต้องมีความรู้ ทักษะ ทัศนคติที่ดี และยึดมั่นในคุณธรรม เพื่อสร้างสุขภาวะชุมชน</p>
+            <p><strong>วิสัยทัศน์:</strong> เป็นสถาบันการศึกษาพยาบาลชั้นนำระดับอาเซียน สร้างผู้นำ นวัตกรรม และองค์ความรู้เพื่อสุขภาวะชุมชน</p>
+            <h4>วิทยาลัยพยาบาลบรมราชชนนี ชัยนาท</h4>
+            <p><strong>ปรัชญา:</strong> การพยาบาลเป็นศาสตร์และศิลป์ในการดูแลองค์รวม เพื่อสุขภาวะและความผาสุก โดยยึดจริยธรรม</p>
+            <p><strong>วิสัยทัศน์:</strong> เป็นสถาบันอุดมศึกษาพยาบาลชั้นนำระดับอาเซียน สร้างองค์ความรู้ นวัตกรรม และกำลังคนสุขภาพ</p>
         </div>
-    </article>
-
-    <!-- Key Performance Indicators -->
-    <article class="card glass-card full-width">
+    </div>
+    <div class="card full-width">
         <div class="card-header">
-            <h3><i class="fas fa-chart-area"></i> ตัวชี้วัดสำคัญ</h3>
+            <h3><i class="fas fa-info-circle"></i> ภาพรวมการประเมิน</h3>
         </div>
-        <div class="kpi-grid">
-            <div class="kpi-item">
-                <div class="kpi-icon academic">
-                    <i class="fas fa-book"></i>
-                </div>
-                <div class="kpi-content">
-                    <div class="kpi-value">100%</div>
-                    <div class="kpi-label">อัตราการคงอยู่</div>
-                    <div class="kpi-trend up">+2.5%</div>
-                </div>
+        <p>รายงานการประเมินตนเองนี้จัดทำเพื่อประเมินหลักสูตรพยาบาลศาสตรบัณฑิตตามเกณฑ์ AUN-QA ปี 2566 โดยมุ่งพัฒนาคุณภาพการศึกษาให้ได้มาตรฐานสากล</p>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h3><i class="fas fa-history"></i> ความเป็นมา</h3>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2520</div>
+                <div class="timeline-title">ก่อตั้งโรงเรียนผู้ช่วยพยาบาล</div>
             </div>
-            <div class="kpi-item">
-                <div class="kpi-icon satisfaction">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <div class="kpi-content">
-                    <div class="kpi-value">4.46/5.0</div>
-                    <div class="kpi-label">ความพึงพอใจ</div>
-                    <div class="kpi-trend up">+0.03</div>
-                </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2523</div>
+                <div class="timeline-title">ยกระดับเป็นวิทยาลัยพยาบาล</div>
             </div>
-            <div class="kpi-item">
-                <div class="kpi-icon employment">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <div class="kpi-content">
-                    <div class="kpi-value">15,497</div>
-                    <div class="kpi-label">เงินเดือนเฉลี่ย (บาท)</div>
-                    <div class="kpi-trend up">+847</div>
-                </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2537</div>
+                <div class="timeline-title">พระราชทานนาม "บรมราชชนนี"</div>
             </div>
-            <div class="kpi-item">
-                <div class="kpi-icon license">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="kpi-content">
-                    <div class="kpi-value">67.24%</div>
-                    <div class="kpi-label">ใบประกอบวิชาชีพ</div>
-                    <div class="kpi-trend up">+7.59%</div>
-                </div>
+            <div class="timeline-item active">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2562</div>
+                <div class="timeline-title">เข้าสังกัดสถาบันพระบรมราชชนก</div>
             </div>
         </div>
-    </article>
-</section>
+    </div>
+</div>
