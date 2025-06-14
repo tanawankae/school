@@ -2202,3 +2202,9 @@ html {
     background: rgba(102, 126, 234, 0.3);
     color: var(--gray-800);
 }
+
+img {
+   width: 100px;
+    height: auto;
+    border-radius: var(--border-radius);
+}
